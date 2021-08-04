@@ -196,8 +196,8 @@ class MainActivity : AppCompatActivity() {
                 MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL_PRIMARY)
             } ?: MediaStore.Images.Media.EXTERNAL_CONTENT_URI
             val contentValues = ContentValues().apply {
-                put(MediaStore.Images.Media.DISPLAY_NAME, "$displayName.jpeg")
-                put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
+                put(MediaStore.Images.Media.DISPLAY_NAME, "$displayName.jpg")
+                put(MediaStore.Images.Media.MIME_TYPE, "image/jpg")
                 put(MediaStore.Images.Media.WIDTH, bmp.width)
                 put(MediaStore.Images.Media.HEIGHT, bmp.height)
             }
